@@ -1,0 +1,1 @@
+sudo add-apt-repository --remove http://security.ubuntu.com/ubuntu jammy-security universe
