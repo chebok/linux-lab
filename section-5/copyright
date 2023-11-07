@@ -1,0 +1,1 @@
+grep "^[0-9]" ~/linux-lab/section-5/docs/copyright >> ~/linux-lab/section-5/strings
