@@ -1,0 +1,8 @@
+sudo pvcreate /dev/vdb
+sudo vgcreate volume1 /dev/vdb
+sudo lvcreate -L 100%FREE -n storage volume1
+
+sudo mkfs.xfs /dev/volume1/storage
+sudo mkdir /storage
+sudo mount /dev/volume1/storage /storage
+sudo bash -c 'echo "/dev/volume1/storage /storage xfs rw 0 0" >> /etc/fstab'
