@@ -1,0 +1,4 @@
+sudo gdisk /dev/vdb
+d
+1
+w
